@@ -1,0 +1,29 @@
+Source: ruby-coffee-script-source
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Daniel Leidert <dleidert@debian.org>
+Build-Depends: debhelper (>= 12~), gem2deb
+Standards-Version: 4.4.1
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-coffee-script-source.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-coffee-script-source
+Homepage: https://github.com/jashkenas/coffeescript/
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-coffee-script-source
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: libjs-coffeescript (>= ${source:Upstream-Version}~),
+         ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: CoffeeScript Compiler - Ruby integration
+ CoffeeScript is a little language that compiles into JavaScript.
+ Underneath all of those embarrassing braces and semicolons,
+ JavaScript has always had a gorgeous object model at its heart.
+ CoffeeScript is an attempt to expose the good parts of JavaScript
+ in a simple way.
+ .
+ This package provides an abstraction of the actual location of the
+ CoffeeScript compiler for use by other Ruby packages, e.g. ruby-coffee-script.

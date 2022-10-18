@@ -1,0 +1,5 @@
+# False positive
+ruby-coffee-script-source source: source-is-missing lib/coffee_script/coffee-script.js *
+ruby-coffee-script-source source: source-contains-prebuilt-javascript-object lib/coffee_script/coffee-script.js *
+ruby-coffee-script-source source: insane-line-length-in-source-file lib/coffee_script/coffee-script.js *
+ruby-coffee-script-source source: version-substvar-for-external-package ruby-coffee-script-source -> libjs-coffeescript

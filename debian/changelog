@@ -1,0 +1,48 @@
+ruby-coffee-script-source (1.12.2-1) unstable; urgency=medium
+
+  [ Antonio Terceiro ]
+  * d/control (Uploaders): Remove myself.
+
+  [ Daniel Leidert ]
+  * debian/compat: Raise to dh level 12.
+  * debian/control: Add Testsuite field.
+    (Standards-Version): Bump to 4.4.1.
+    (Build-Depends): Increase dh version.
+    (Vcs-Git, Vcs-Browser): Set to salsa.d.o location.
+    (Homepage): Point to the current GitHub project.
+    (Uploaders): Add myself to fix no-human-maintainers.
+  * d/copyright (Format): Fix insecure-copyright-format-uri.
+    (Source): Point to the current GitHub project.
+  * d/watch: Use gemwatch.d.n.
+  * d/source/lintian-overrides: Add version-substvar-for-external-package.
+
+ -- Daniel Leidert <dleidert@debian.org>  Mon, 11 Nov 2019 03:04:37 +0100
+
+ruby-coffee-script-source (1.10.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Set minimum version for libjs-coffeescript to ${source:Upstream-Version}
+    (same version as ruby-coffee-script)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 05 Jun 2016 17:56:40 +0530
+
+ruby-coffee-script-source (1.9.1.1-1) unstable; urgency=medium
+
+  * New upstream release
+    - drop debian/coffee-script.js as upstream ships
+      lib/coffee_script/coffee-script.js not munified now.
+
+ -- Antonio Terceiro <terceiro@debian.org>  Fri, 14 Aug 2015 14:01:51 -0300
+
+ruby-coffee-script-source (1.3.3-2) unstable; urgency=medium
+
+  * No changes rebuild to add support for new interpreters
+
+ -- Antonio Terceiro <terceiro@debian.org>  Sat, 29 Mar 2014 14:19:59 -0300
+
+ruby-coffee-script-source (1.3.3-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Antonio Terceiro <terceiro@debian.org>  Wed, 27 Jun 2012 21:11:59 -0300
